@@ -290,6 +290,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libshim_vtservice
 
+# Touch
+PRODUCT_PACKAGES += \
+    vendor.lineage.touch@1.0-service.RM6785
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
