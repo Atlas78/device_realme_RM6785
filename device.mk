@@ -78,6 +78,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     disable_configstore
 
+# DT2W
+PRODUCT_PACKAGES += \
+    DT2W-Service-RM6785
+
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
