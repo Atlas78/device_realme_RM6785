@@ -69,6 +69,11 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.device@3.6.vendor \
     android.hardware.camera.provider@2.6.vendor
 
+# Codec2 modules
+PRODUCT_PACKAGES += \
+    com.android.media.swcodec \
+    libsfplugin_ccodec
+
 # ConfigStore
 PRODUCT_PACKAGES += \
     disable_configstore
