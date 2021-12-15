@@ -1,2 +1,3 @@
+genfscon sysfs /devices/platform/fpc_interrupt u:object_r:sysfs_fingerprint:s0
 genfscon proc  /touchpanel u:object_r:proc_tp:s0
 genfscon proc  /fp_id u:object_r:proc_fingerprint:s0
