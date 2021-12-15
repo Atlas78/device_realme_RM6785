@@ -1,3 +1,5 @@
 add_hwservice(hal_fingerprint_default, hal_fingerprint_oplus_hwservice)
 
 r_dir_file(hal_fingerprint_default, proc_fingerprint)
+
+set_prop(hal_fingerprint_default, vendor_fingerprint_prop)
