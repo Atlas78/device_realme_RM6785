@@ -1,1 +1,2 @@
 genfscon proc  /touchpanel u:object_r:proc_tp:s0
+genfscon proc  /fp_id u:object_r:proc_fingerprint:s0
