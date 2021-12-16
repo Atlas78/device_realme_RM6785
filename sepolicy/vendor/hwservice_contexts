@@ -1,3 +1,6 @@
+# CommonDcs
+vendor.oplus.hardware.commondcs::ICommonDcsHalService u:object_r:hal_commondcs_hwservice:s0
+
 # Fingerprint
 vendor.oplus.hardware.biometrics.fingerprint::IBiometricsFingerprint u:object_r:hal_fingerprint_oplus_hwservice:s0
 vendor.oplus.hardware.biometrics.fingerprintservice::IFingerprintHalService u:object_r:hal_fingerprint_oplus_hwservice:s0
