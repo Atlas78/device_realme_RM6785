@@ -28,6 +28,7 @@
  */
 
 #include <fcntl.h>
+#include <fstream>
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -44,6 +45,8 @@
 
 #include "vendor_init.h"
 #include "property_service.h"
+
+#define PROC_NFC_CHIPSET "/proc/oppo_nfc/chipset"
 
 using android::base::ReadFileToString;
 using android::base::Trim;
@@ -78,6 +81,20 @@ void set_ro_build_prop(const std::string &prop, const std::string &value, bool p
             prop_name = "ro." + source + "build." + prop;
 
         property_override(prop_name.c_str(), value.c_str());
+    }
+}
+
+void check_nfc_support()
+{
+    std::ifstream procfile(PROC_NFC_CHIPSET);
+    std::string chipset;
+
+    getline(procfile, chipset);
+
+    LOG(INFO) << "oppo_nfc : chipset " << chipset;
+
+    if (chipset != "NULL") {
+        property_override("ro.boot.product.hardware.sku", "nfc");
     }
 }
 
@@ -151,4 +168,6 @@ void vendor_load_properties() {
     set_ro_build_prop("model", model);
     set_ro_build_prop("name", model);
     set_ro_build_prop("product", model, false);
+
+    check_nfc_support();
 }
