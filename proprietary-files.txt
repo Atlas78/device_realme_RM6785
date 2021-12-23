@@ -1827,7 +1827,7 @@ vendor/lib64/libvowp2training_alexa.vendor.so
 vendor/lib64/libvpu.so
 vendor/lib64/libwapi.so
 vendor/lib64/libWaterMark.so
-vendor/lib64/libwifi-hal.so
+-vendor/lib64/libwifi-hal.so:vendor/lib64/libwifi-hal-mtk.so
 vendor/lib64/libwifitest.so
 vendor/lib64/libwo.so
 vendor/lib64/libwpa_client.so

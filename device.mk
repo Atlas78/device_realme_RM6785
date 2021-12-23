@@ -325,7 +325,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     TetheringConfigOverlayRM6785 \
     WifiOverlayRM6785 \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi@1.0-service.RM6785 \
     android.hardware.wifi.supplicant@1.3.vendor \
     android.hardware.wifi.hostapd@1.2.vendor \
     libkeystore-engine-wifi-hidl:64 \
