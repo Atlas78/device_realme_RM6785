@@ -122,10 +122,6 @@ PRODUCT_PACKAGES += \
     init.target.rc \
     fstab.mt6785 \
 
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/touchpanel.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/touchpanel.kl
-
 # Keymaster
 PRODUCT_PACKAGES += \
     libkeymaster4.vendor:64 \
