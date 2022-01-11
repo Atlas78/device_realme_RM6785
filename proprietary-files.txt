@@ -47,8 +47,8 @@ framework/mediatek-ims-legacy.jar
 -lib64/libmtkperf_client.so
 -lib64/libvcodec_cap.so
 -lib64/libvcodec_capenc.so
--system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
--system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+-system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext
+-system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so;MODULE=vendor.mediatek.hardware.videotelephony@1.0.system_ext
 
 # Kernel Power Off Charging (KPOC)
 -bin/kpoc_charger
@@ -222,7 +222,7 @@ odm/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img
 -odm/lib64/hw/vendor.oplus.hardware.camera.slogan@1.0-impl.so
 -odm/lib64/libormshalclient.so
 -odm/lib64/vendor.oplus.hardware.appradio@1.0.so
--odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
+-odm/lib64/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE=vendor.oplus.hardware.biometrics.fingerprint@2.1.odm
 -odm/lib64/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so
 -odm/lib64/vendor.oplus.hardware.camera.slogan@1.0.so
 -odm/lib64/vendor.oplus.hardware.commondcs@1.0.so
@@ -231,7 +231,7 @@ odm/firmware/tp/20682/LIMIT_NT36672C_NF_TIANMA.img
 -odm/lib/hw/vendor.oplus.hardware.camera.slogan@1.0-impl.so
 -odm/lib/libormshalclient.so
 -odm/lib/vendor.oplus.hardware.appradio@1.0.so
--odm/lib/vendor.oplus.hardware.biometrics.fingerprint@2.1.so
+-odm/lib/vendor.oplus.hardware.biometrics.fingerprint@2.1.so;MODULE=vendor.oplus.hardware.biometrics.fingerprint@2.1.odm
 -odm/lib/vendor.oplus.hardware.biometrics.fingerprintservice@1.0.so
 -odm/lib/vendor.oplus.hardware.camera.slogan@1.0.so
 -odm/lib/vendor.oplus.hardware.commondcs@1.0.so
@@ -2673,7 +2673,7 @@ vendor/lib/egl/egl.cfg
 -vendor/lib/vendor.mediatek.hardware.pq@2.5.so
 -vendor/lib/vendor.mediatek.hardware.pq@2.6.so
 -vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
--vendor/lib/vndk/libstagefright_omx.so
+-vendor/lib/vndk/libstagefright_omx.so;MODULE=libstagefright_omx.mtk
 -vendor/lib/VP9SecureVdecCA.so
 vendor/ueventd.rc
 
