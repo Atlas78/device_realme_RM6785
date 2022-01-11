@@ -49,7 +49,8 @@ PRODUCT_PACKAGES += \
     libalsautils \
     libaudiofoundation.vendor \
     libbluetooth_audio_session \
-    libtinycompress
+    libtinycompress \
+    libtinyxml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/audio/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
