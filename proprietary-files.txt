@@ -1,8 +1,5 @@
 # All unpinned blobs are from RMX2001_11_C.15
 
-# APNs
-etc/apns-conf.xml:product/etc/apns-conf.xml
-
 # Bluetooth (AptX)
 lib64/libaptX_encoder.so
 lib64/libaptXHD_encoder.so
